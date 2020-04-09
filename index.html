@@ -1,60 +1,133 @@
 <!--<button type="button" onclick="answer.value += '1' "><i class="fab fa-facebook-f"></i></button>-->
 <!DOCTYPE html>
 <html>
-<head>
-	<title>calculator</title>
-	<link rel="stylesheet" type="text/css" href="css.css">
-	<link rel="stylesheet" type="text/css" href="C:\Users\abhij\Desktop\css\fontawesome-free-5.11.2-web\css\all.css">
-	<script>
-		function back()
-		{
-			var a=document.getElementById('answer').value;
-			var b=a.substr(0,a.length-1);
-			document.getElementById('answer').value=b;
-		}
-		function z()
-		{
-			document.getElementById('answer').value = eval(answer.value);
-			
-		}
-	</script>
-</head>
-<body>
+  <head>
+    <title>calculator</title>
+    <link rel="stylesheet" type="text/css" href="css.css" />
+    <script>
+      function back() {
+        var a = document.getElementById("answer").value;
+        var b = a.substr(0, a.length - 1);
+        document.getElementById("answer").value = b;
+      }
+      function z() {
+        document.getElementById("answer").value = eval(answer.value);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="box">
+      <form>
+        <div class="i">
+          <input type="text" name="answer" id="answer" readonly />
+          <br />
+          <input
+            type="button"
+            name=""
+            value=" 1 "
+            onclick="answer.value += '1' "
+          />
 
-	<div class="box">
-	<form>
-		<div class="i">
-		<input type="text" name="answer" id="answer" readonly>
-		<br>
-		<input type="button" name="" value=" 1 " onclick="answer.value += '1' " >
-
-		<input type="button" name="" value=" 2 " onclick="answer.value += '2' " >
-		<input type="button" name="" value=" 3 " onclick="answer.value += '3' " >
-		<input type="button" name="" value=" / " onclick="answer.value += '/' " >
-		<br>
-		<input type="button" name="" value=" 4 " onclick="answer.value += '4' " >
-		<input type="button" name="" value=" 5 " onclick="answer.value += '5' " >
-		<input type="button" name="" value=" 6 " onclick="answer.value += '6' " >
-		<input type="button" name="" value=" x " onclick="answer.value += '*' " >
-		<br>
-		<input type="button" name="" value=" 7 " onclick="answer.value += '7' " >
-		<input type="button" name="" value=" 8 " onclick="answer.value += '8' " >
-		<input type="button" name="" value=" 9 " onclick="answer.value += '9' " >
-		<input type="button" name="" value=" - " onclick="answer.value += '-' " >
-		<br>
-		<input type="button" name="" value=" 0 " onclick="answer.value += '0' " >
-		<input type="button" name="" value=" . " onclick="answer.value += '.' " >
-		<input type="button" name="" value=" = " onclick="z()">
-		<input type="button" name="" value=" + " onclick="answer.value += '+' " >
-		<br>
-	</div>
-		<div class="clear">
-		<input type="button" name="" value=" Back " onclick="back()" >
-		<input type="button" name="" value=" Clear All " onclick="answer.value = '' " >
-	</div>
-		
-	</form>
-</div>
-
-</body>
+          <input
+            type="button"
+            name=""
+            value=" 2 "
+            onclick="answer.value += '2' "
+          />
+          <input
+            type="button"
+            name=""
+            value=" 3 "
+            onclick="answer.value += '3' "
+          />
+          <input
+            type="button"
+            name=""
+            value=" / "
+            onclick="answer.value += '/' "
+          />
+          <br />
+          <input
+            type="button"
+            name=""
+            value=" 4 "
+            onclick="answer.value += '4' "
+          />
+          <input
+            type="button"
+            name=""
+            value=" 5 "
+            onclick="answer.value += '5' "
+          />
+          <input
+            type="button"
+            name=""
+            value=" 6 "
+            onclick="answer.value += '6' "
+          />
+          <input
+            type="button"
+            name=""
+            value=" x "
+            onclick="answer.value += '*' "
+          />
+          <br />
+          <input
+            type="button"
+            name=""
+            value=" 7 "
+            onclick="answer.value += '7' "
+          />
+          <input
+            type="button"
+            name=""
+            value=" 8 "
+            onclick="answer.value += '8' "
+          />
+          <input
+            type="button"
+            name=""
+            value=" 9 "
+            onclick="answer.value += '9' "
+          />
+          <input
+            type="button"
+            name=""
+            value=" - "
+            onclick="answer.value += '-' "
+          />
+          <br />
+          <input
+            type="button"
+            name=""
+            value=" 0 "
+            onclick="answer.value += '0' "
+          />
+          <input
+            type="button"
+            name=""
+            value=" . "
+            onclick="answer.value += '.' "
+          />
+          <input type="button" name="" value=" = " onclick="z()" />
+          <input
+            type="button"
+            name=""
+            value=" + "
+            onclick="answer.value += '+' "
+          />
+          <br />
+        </div>
+        <div class="clear">
+          <input type="button" name="" value=" Back " onclick="back()" />
+          <input
+            type="button"
+            name=""
+            value=" Clear All "
+            onclick="answer.value = '' "
+          />
+        </div>
+      </form>
+    </div>
+  </body>
 </html>

@@ -4,16 +4,6 @@
   <head>
     <title>Basic calculator</title>
     <link rel="stylesheet" type="text/css" href="css.css" />
-    <script>
-      function back() {
-        var a = document.getElementById("answer").value;
-        var b = a.substr(0, a.length - 1);
-        document.getElementById("answer").value = b;
-      }
-      function z() {
-        document.getElementById("answer").value = eval(answer.value);
-      }
-    </script>
   </head>
   <body>
     <div class="box">
@@ -129,5 +119,6 @@
         </div>
       </form>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
